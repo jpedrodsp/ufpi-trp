@@ -6,7 +6,7 @@ class TRP_data_packet:
     data = None
     time_limit = 0
 
-    def __init__(self, id, data, time_limit):
+    def __init__(self, id, data, time_limit=default_time_limit):
         self.id = id
         self.data = data
         self.time_limit = time_limit
@@ -55,7 +55,9 @@ def is_packet(packet):
 
 def convert_text_to_packet(packet):
     if is_packet(packet):
+        #print("mounting", packet)
         _sr = str(packet).split(packet_separator)
-        new_packet = TRP_data_packet(_sr[1], _sr[2])
+        new_packet = create_packet(_sr[1], _sr[3])
+        #print("mounted", new_packet)
         return new_packet
     return None

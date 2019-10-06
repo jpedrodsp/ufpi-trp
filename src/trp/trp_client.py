@@ -1,7 +1,10 @@
+import sys
+sys.path.append('src/trp')
+
 import socket
 import time
-import src.trp.trp_defaults
-import src.trp.trp_packet
+import trp_defaults
+import trp_packet
 
 class TRP_client:
     _socket = None
@@ -16,13 +19,15 @@ class TRP_client:
         self._socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         _address_tuple = (target_host, target_port)
 
-        new_packet = src.trp.trp_packet.create_packet(self.packet_count, data=data.encode('utf-8'))
+        new_packet = trp_packet.create_packet(self.packet_count, data=data.encode('utf-8'))
         packet_acknowledged = False
         retry_timer = 1
         while not packet_acknowledged:
-            self._socket.sendto(new_packet, _address_tuple)
-            resp, addr = self._socket.recvfrom(src.trp.trp_defaults.default_buffer_max_size)
-            if src.trp.trp_packet.convert_text_to_ack(resp):
+            #print("waiting for packet", new_packet.id)
+            self._socket.sendto(str(new_packet).encode('utf-8'), _address_tuple)
+            resp, addr = self._socket.recvfrom(trp_defaults.default_buffer_max_size)
+            #print("received from server", resp)
+            if trp_packet.convert_text_to_ack(resp.decode('utf-8')):
                 packet_acknowledged = True
             else:
                 time.sleep(retry_timer)

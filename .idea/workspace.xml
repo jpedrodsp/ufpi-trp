@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c6ebc45-93f8-4bcd-b1ec-24c218a8f257" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/opt/trashcode/trp_async_client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opt/trashcode/trp_async_server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opt/trashcode/trp_server_socket.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/trp/trp_async_client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/trp/trp_defaults.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/trp/trp_server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/trp_test/trp_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trp_packet.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/trp/trp_packet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trp_socket.py" beforeDir="false" afterPath="$PROJECT_DIR$/opt/trashcode/trp_client_socket.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trp/trp_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/trp/trp_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trp/trp_packet.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/trp/trp_packet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trp/trp_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/trp/trp_server.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

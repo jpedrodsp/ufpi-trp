@@ -1,18 +1,21 @@
+import sys
+sys.path.append('src/trp')
+
 import socket
 import time
-import src.trp.trp_defaults
-import src.trp.trp_packet
+import trp_defaults
+import trp_packet
 
 class TRP_server:
     _socket = None
-    hostport = src.trp.trp_defaults.default_host_port
+    hostport = trp_defaults.default_host_port
     packet_count = 0
     is_open = False
 
     def __init__(self):
         self.packet_count = 0
         self._socket = None
-        self.hostport = src.trp.trp_defaults.default_host_port
+        self.hostport = trp_defaults.default_host_port
         self.is_open = False
         pass
 
@@ -30,14 +33,16 @@ class TRP_server:
     def receive(self, hostport):
         if not self.is_open:
             self.open(hostport)
-        self._socket = socket.socket()
         while self.is_open:
-            packet, recv_addr = self._socket.recvfrom(src.trp.trp_defaults.default_buffer_max_size)
+            packet, recv_addr = self._socket.recvfrom(trp_defaults.default_buffer_max_size)
             if packet:
-                if src.trp.trp_packet.is_packet(str(packet).decode('utf-8')):
-                    recv_packet = src.trp.trp_packet.convert_text_to_packet(str(packet))
+                print(packet)
+                packet = bytes(packet).decode('utf-8')
+                if trp_packet.is_packet(str(packet)):
+                    recv_packet = trp_packet.convert_text_to_packet(str(packet))
                     if recv_packet:
-                        ack_packet = src.trp.trp_packet.create_ack(recv_packet.id)
+                        ack_packet = trp_packet.create_ack(recv_packet.id)
+                        #print("sending ack", ack_packet)
                         self._socket.sendto(str(ack_packet).encode('utf-8'), recv_addr)
                         return recv_packet.data
         return None
