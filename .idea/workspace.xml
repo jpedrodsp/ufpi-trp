@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c6ebc45-93f8-4bcd-b1ec-24c218a8f257" name="Default Changelist" comment="" />
+    <list default="true" id="6c6ebc45-93f8-4bcd-b1ec-24c218a8f257" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/opt/trashcode/trp_async_client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opt/trashcode/trp_async_server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opt/trashcode/trp_server_socket.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/trp/trp_async_client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/trp/trp_defaults.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/trp/trp_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trp_packet.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/trp/trp_packet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trp_socket.py" beforeDir="false" afterPath="$PROJECT_DIR$/opt/trashcode/trp_client_socket.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +25,27 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1RmtkcoEQjNX463T9p40GUjrViH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/trp" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/trp" />
+      <recent name="$PROJECT_DIR$/opt" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/trash" />
+      <recent name="$PROJECT_DIR$/pythread_socket_example" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/trp" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -40,5 +70,18 @@
       <updated>1570284243636</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

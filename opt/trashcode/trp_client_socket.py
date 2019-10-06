@@ -1,14 +1,13 @@
 import socket
-import trp_packet
+from src.trp import trp_packet
 
 default_socket_buffer_size = 1024
 
-class TRP_socket:
+class TRP_client_socket:
     _socket = None
     hostport = 6900
-    is_server = False
     is_ready = False
-    send_buffer = []
+    receiving_buffer = []
 
     def __init__(self, hostport):
         self.hostport = hostport
@@ -16,15 +15,8 @@ class TRP_socket:
     def start(self):
         if not self._socket:
             self._socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-            if self.is_server:
-                self._socket.bind(("localhost", self.hostport))
-                self._socket.accept()
-                print("TRP socket server initialized.")
             self.is_ready = True
-            print("TRP node initialized.")
-            if not self.is_server:
-                print("TRP node is ready to receive data.")
-                self.receive_data_loop()
+            print("TRP client node initialized.")
 
     def stop(self):
         if self._socket:
@@ -60,6 +52,8 @@ class TRP_socket:
                         if _split_result[0] == "DAT":
                             new_packet = trp_packet.create_packet(int(_split_result[1]), _split_result[2])
                             # Answer with a ACK packet
+
+                            #todo
                         elif _split_result[0] == "ACK":
                             new_packet = trp_packet.create_ack(int(_split_result[1]))
                             #todo
