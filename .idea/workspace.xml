@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c6ebc45-93f8-4bcd-b1ec-24c218a8f257" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/trp_test/trp_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/trp_test/trp_timeout_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/TRP2019-2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TRP2019-2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/trp/trp_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/trp/trp_client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/trp/trp_packet.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/trp/trp_packet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trp/trp_defaults.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/trp/trp_defaults.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/trp/trp_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/trp/trp_server.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,19 +29,21 @@
   <component name="ProjectId" id="1RmtkcoEQjNX463T9p40GUjrViH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/trp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/trp_test" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/trp_test" />
+      <recent name="$PROJECT_DIR$/src/trp" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/trp" />
       <recent name="$PROJECT_DIR$/opt" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/trash" />
       <recent name="$PROJECT_DIR$/pythread_socket_example" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/trp" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
