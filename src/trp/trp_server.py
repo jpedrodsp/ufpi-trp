@@ -44,5 +44,5 @@ class TRP_server:
                         ack_packet = trp_packet.create_ack(recv_packet.id)
                         #print("sending ack", ack_packet)
                         self._socket.sendto(str(ack_packet).encode('utf-8'), recv_addr)
-                        return recv_packet.data.decode('utf-8')
+                        return recv_packet.data
         return None
